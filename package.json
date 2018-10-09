@@ -4,13 +4,25 @@
   "description": "Customizable Express.js backend dev server running on electron",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "electron .",
+    "dev-server": "nodemon server.js --exec babel-node"
   },
   "keywords": [
     "Express.js",
     "Electron.js",
-    "dev-server"
+    "dev-server",
+    "Node.js"
   ],
   "author": "Anuj Datar",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "electron": "^3.0.3"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "pug": "^2.0.3"
+  }
 }
