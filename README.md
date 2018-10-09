@@ -4,10 +4,10 @@ if you don't run it from the command line, while developing a front-end on a sep
 
 
 ##Express.js running a Pug.js view engine
-nodemon runs the express server for hot-reloads
+  nodemon runs the express server for hot-reloads
 
 ##Electron.js to show server stats
-TODO: add functionality, server customizability, to electron frontend
+  TODO: add functionality, server customizability, to electron frontend
 
 ##Project setup
 ```
