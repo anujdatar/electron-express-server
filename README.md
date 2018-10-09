@@ -30,3 +30,6 @@ npm run dev-server
 ### TODOS:
   - mongojs functionality
   - build/minifying options
+
+### License
+MIT

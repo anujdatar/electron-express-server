@@ -1,12 +1,13 @@
 {
   "name": "electron-express-server",
   "version": "1.0.0",
-  "description": "Customizable Express.js backend dev server running on electron",
+  "description": "Customizable Express.js backend dev server running on Electron.js front-end",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
     "dev-server": "nodemon server.js"
   },
+  "repository": "https://github.com/anujdatar/electron-express-server",
   "keywords": [
     "Express.js",
     "Electron.js",
