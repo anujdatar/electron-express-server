@@ -1,4 +1,30 @@
 extends layout
 
 block content
-  h1 Home Page
+
+  mixin defLocIp(myLink)
+    a(href=myLink)= myLink
+  
+  h1 #{title}
+
+  p We are using Node.js 
+    b.versions
+      script document.write(process.versions.node)
+
+  p Chromium 
+    b.versions
+      script document.write(process.versions.chrome)
+
+  p and Electron 
+    b.versions
+      script document.write(process.versions.electron)
+
+  br
+  br
+  p Express.js server running at
+    p - Local:    
+      a.serve-link(href=data.localIp)= data.localIp   
+      |    or 
+      a.serve-link(href=data.localIp2)= data.localIp2
+    p - Network: 
+      a.serve-link(href=data.networkIp)= data.networkIp 
