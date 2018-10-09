@@ -24,7 +24,9 @@ npm start
 npm run dev-server
 ```
 
+### version
+1.0.0
 
-TODOS:
+### TODOS:
   - mongojs functionality
   - build/minifying options
