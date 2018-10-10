@@ -23,13 +23,13 @@ npm install
 ```
 
 ## Run app (Electron+Angular and Express)
-`npm run electron` -> `electron .`
-`npm run electron:test` -> `ng build && electron .`  # test app before prod
-`npm run electron:prod` -> `ng build --prod && electron .`  # recommended for production, takes longer for AOT (ahead of time) compilation
+  `npm run electron` -> `electron .`
+  `npm run electron:test` -> `ng build && electron .`  test app before prod
+  `npm run electron:prod` -> `ng build --prod && electron .`  # recommended for production, takes longer for AOT (ahead of time) compilation
 
 
 ## Run Express server only from command-line
-`npm run dev-server` -> `nodemon server.js` only run back end server for reduced overhead
+  `npm run dev-server` -> `nodemon server.js` only run back end server for reduced overhead
 
 
 ### version
