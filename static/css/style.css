@@ -8,7 +8,7 @@ body {
   color: #fff;
   font-family: var(--fonts);
 }
-div.main {
+.main {
   line-height: 1.1em;
   padding: 10px;
 }
@@ -38,11 +38,11 @@ nav a:hover, nav a.router-link-exact-active {
   background-color: #f18589;
   border-radius: 2px;
 }
-nav a.navbar-brand {
+.navbar-brand {
   font-size: 2em;
   float: left;
 }
-nav a.nav-link {
+.nav-link {
   float: right;
   padding-left: 30px;
   padding-right: 30px;
@@ -58,7 +58,7 @@ nav, .btn {
   -webkit-tap-highlight-color: transparent;
 }
 
-a.serve-link {
+.serve-link {
   color: #4db6ac;
 }
 
