@@ -33,15 +33,21 @@ npm install
 
 ## Run app (Electron+Angular and Express)
   test app before prod
-  ```npm run electron:test        or        ng build && electron .```
+  ```
+  npm run electron:test        or        ng build && electron .
+  ```
 
   For production, AOT (ahead of time) compilation recommended. comp takes a bit longer
-  ```npm run electron:prod        or        ng build --prod && electron .```
+  ```
+  npm run electron:prod        or        ng build --prod && electron .
+  ```
 
 
 ## Run Express server only from command-line
   Run only backend Express.js server for reduced overhead
-  ```npm run dev-server        or        nodemon server.js```
+  ```
+  npm run dev-server        or        nodemon server.js
+  ```
 
 
 ### version
