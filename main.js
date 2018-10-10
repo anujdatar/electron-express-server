@@ -11,8 +11,9 @@ function createWindow () {
   mainWindow = new BrowserWindow({width: 800, height: 600})
 
   // and load the index.html of the app.
-  // mainWindow.loadFile('./views/index.html')
-  mainWindow.loadURL('http://localhost:3000/')
+  // mainWindow.loadFile('./dist/index.html')
+  // mainWindow.loadURL('http://localhost:3000/')
+  mainWindow.loadURL(`file://${__dirname}/dist/electron-express-server/index.html`)
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()
@@ -50,4 +51,5 @@ app.on('activate', function () {
 
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and require them here.
-nodemon('./server.js')
+// nodemon('./server.js')
+

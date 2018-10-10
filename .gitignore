@@ -22,7 +22,13 @@ build/Release
 node_modules/
 jspm_packages/
 .DS_Store
-/dist
+dist/
+
+# compiled output
+/out-tsc
+
+# System Files
+Thumbs.db
 
 # TypeScript v1 declaration files
 typings/
@@ -65,7 +71,15 @@ coverage
 .env.local
 .env.*.local
 
+# misc
+tmp/
+/.sass-cache
+/connect.lock
+/libpeerconnection.log
+testem.log
+
 # Editor directories and files
+.sublime-workspace
 .atom
 .idea
 .vscode
@@ -74,3 +88,8 @@ coverage
 *.njsproj
 *.sln
 *.sw*
+.project
+.classpath
+.c9/
+*.launch
+.settings/
