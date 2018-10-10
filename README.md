@@ -16,20 +16,32 @@ nodemon runs the express server for hot-reloads
 TODO:
   - add logging on pages
   - add routing and functionality
-===
+___
+___
 ## Project setup
 ```
 npm install
 ```
 
+## Frontend Angular development
+  Run angular server and electron in different consoles
+  ```
+  ng serve        or         npm run ng:serve
+  electron .      or         npm run electron
+  ```
+  Route Electron main window to url `http://localhost:4200`
+
 ## Run app (Electron+Angular and Express)
-  `npm run electron` -> `electron .`
-  `npm run electron:test` -> `ng build && electron .`  test app before prod
-  `npm run electron:prod` -> `ng build --prod && electron .`  # recommended for production, takes longer for AOT (ahead of time) compilation
+  test app before prod
+  ```npm run electron:test        or        ng build && electron .```
+
+  For production, AOT (ahead of time) compilation recommended. comp takes a bit longer
+  ```npm run electron:prod        or        ng build --prod && electron .```
 
 
 ## Run Express server only from command-line
-  `npm run dev-server` -> `nodemon server.js` only run back end server for reduced overhead
+  Run only backend Express.js server for reduced overhead
+  ```npm run dev-server        or        nodemon server.js```
 
 
 ### version
