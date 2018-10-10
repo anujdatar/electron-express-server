@@ -28,3 +28,16 @@ block content
       a.serve-link(href=data.localIp2)= data.localIp2
     p - Network: 
       a.serve-link(href=data.networkIp)= data.networkIp 
+  br
+  br
+  
+  .custom-select
+    label Open in text editor
+    br
+    select
+      option(value='', disabled='', selected='') Choose your option
+      option(value='vscode') VS Code
+      option(value='atom') Atom Editor
+      option(value='3') Option 3
+
+  //- script(src="/js/customSelect.js")
