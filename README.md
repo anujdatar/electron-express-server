@@ -16,7 +16,7 @@ nodemon runs the express server for hot-reloads
 TODO:
   - add logging on pages
   - add routing and functionality
-___
+
 ___
 ## Project setup
 ```

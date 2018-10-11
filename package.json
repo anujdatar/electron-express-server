@@ -11,7 +11,7 @@
     "ng:test": "ng test",
     "ng:lint": "ng lint",
     "ng:e2e": "ng e2e",
-    "electron": "electron .",
+    "electron": "electron . --dev",
     "electron:test": "ng build && electron .",
     "electron:prod": "ng build --prod && electron ."
   },

@@ -1,10 +1,20 @@
 // Modules to control application life and create native browser window
 const {app, BrowserWindow} = require('electron')
-const nodemon = require('nodemon')
+// const nodemon = require('nodemon')
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
 let mainWindow
+
+const buildEnv = process.argv[2]
+let mainURL
+if (buildEnv === '--dev') {
+  mainURL = 'http://localhost:4200/'
+  console.log(mainURL)
+} else {
+  mainURL = `file://${__dirname}/dist/electron-express-server/index.html`
+  console.log(mainURL)
+}
 
 function createWindow () {
   // Create the browser window.
@@ -13,9 +23,9 @@ function createWindow () {
   // and load the index.html of the app.
   // mainWindow.loadFile('./dist/index.html')
   // mainWindow.loadURL('http://localhost:3000/')
-  mainWindow.loadURL(`file://${__dirname}/dist/electron-express-server/index.html`)
+  mainWindow.loadURL(mainURL)
 
-  // Open the DevTools.
+  // Open the DevTools at launch
   // mainWindow.webContents.openDevTools()
 
   // Emitted when the window is closed.
@@ -52,4 +62,3 @@ app.on('activate', function () {
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and require them here.
 // nodemon('./server.js')
-
