@@ -1,14 +1,30 @@
 {
   "name": "electron-express-server",
-  "version": "0.0.0",
+  "author": "Anuj Datar",
+  "license": "MIT",
+  "version": "1.0.1",
+  "description": "Customizable Express.js backend dev server running on Electron.js front-end",
+  "main": "main.js",
   "scripts": {
+    "dev-server": "nodemon server.js",
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+    "ng:serve": "ng serve",
+    "ng:build": "ng build",
+    "ng:test": "ng test",
+    "ng:lint": "ng lint",
+    "ng:e2e": "ng e2e",
+    "electron": "electron . --dev",
+    "electron:test": "ng build && electron .",
+    "electron:prod": "ng build --prod && electron ."
   },
+  "repository": "https://github.com/anujdatar/electron-express-server",
+  "keywords": [
+    "Express.js",
+    "Electron.js",
+    "dev-server",
+    "Node.js",
+    "Angular"
+  ],
   "private": true,
   "dependencies": {
     "@angular/animations": "~7.0.0",
