@@ -2,7 +2,7 @@
   "name": "electron-express-server",
   "author": "Anuj Datar",
   "license": "MIT",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Customizable Express.js backend dev server running on Electron.js front-end",
   "main": "main.js",
   "scripts": {
