@@ -11,8 +11,8 @@ const app = express()
 
 // app setup and middleware ***************************************************
 // load view engine - pug
-app.set('views', path.join(__dirname, 'views'))
-app.set('view engine', 'pug')
+// app.set('views', path.join(__dirname, 'views'))
+// app.set('view engine', 'pug')
 // set static or public folder
 app.use(express.static(path.join(__dirname, 'static')))
 
@@ -41,18 +41,19 @@ app.listen(port, () => {
 
 // set up basic request routing ***********************************************
 app.get('/', (req, res) => {
-  res.render('index', {
-    title: 'Electron Express Awesomeness',
-    data: {
-      networkIp: networkAddress,
-      localIp: localAddress,
-      localIp2: localAddress2,
-      test: 'Hannah Bear'
-    }
-  })
+  res.send('home page')
+  // res.render('index', {
+  //   title: 'Electron Express Awesomeness',
+  //   data: {
+  //     networkIp: networkAddress,
+  //     localIp: localAddress,
+  //     localIp2: localAddress2,
+  //     test: 'Hannah Bear'
+  //   }
+  // })
 })
 
 app.get('/about', (req, res) => {
-  res.render('about')
+  res.send('about')
 })
 // ****************************************************************************

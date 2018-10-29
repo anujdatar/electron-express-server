@@ -1,0 +1,56 @@
+nav {
+  background-color: #1de9b6;
+  margin-bottom: 50px;
+  // margin-top: -10px;
+  width: 100%;
+  border-radius: 2px;
+
+  ul {
+    list-style: none;
+    padding: 20px;
+
+    
+
+    li {
+      display: inline-block;
+      padding-right: 20px;
+      font-size: 1.5em;
+
+      &.logo {
+        font-size: 2em;
+        color: #263238;
+        font-weight: 800;
+        margin-right: 20px;
+        cursor: default;
+      }
+
+      a {
+        // float: right;
+        padding: 10px 5px 10px 5px;
+        height: 100px;
+        
+        i {
+          // color: white;
+          vertical-align: middle;
+        }
+
+        span {
+          text-align: center;
+          vertical-align: middle;
+          color: white;
+          font-size: .8em;
+        }
+
+        &:hover {
+          background-color: purple;
+        }        
+      }
+      &.active {
+        i, span {
+          color: red;
+        }
+      }
+      
+    }
+  }
+}

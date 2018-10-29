@@ -1,6 +1,7 @@
 // Modules to control application life and create native browser window
 const {app, BrowserWindow} = require('electron')
-// const nodemon = require('nodemon')
+const nodemon = require('nodemon')
+const frontendServer = require('./frontendServer')
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
@@ -12,7 +13,8 @@ if (buildEnv === '--dev') {
   mainURL = 'http://localhost:4200/'
   console.log(mainURL)
 } else {
-  mainURL = `file://${__dirname}/dist/electron-express-server/index.html`
+  // mainURL = `file://${__dirname}/dist/electron-express-server/index.html`
+  mainURL = 'http://localhost:8080/'
   console.log(mainURL)
 }
 
@@ -61,4 +63,8 @@ app.on('activate', function () {
 
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and require them here.
-// nodemon('./server.js')
+nodemon('./expressServer.js')
+
+// http server for ang frontend
+// httpServer()
+frontendServer()
