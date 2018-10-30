@@ -39,6 +39,7 @@
     "body-parser": "^1.18.3",
     "core-js": "^2.5.4",
     "express": "^4.16.4",
+    "material-design-icons": "^3.0.1",
     "nodemon": "^1.18.5",
     "rxjs": "~6.3.3",
     "vivid-icons": "^1.0.9",
